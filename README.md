@@ -11,7 +11,7 @@ A beautiful, hyper-lightweight, and fully responsive static HTML5/CSS3 personal 
 
 ## 📸 Preview
 
-![Desktop Mockup](./assets/img/preview.png)
+![Desktop Mockup](/assets/img/preview.png)
 *Fully functional modern tech layout with side navigation.*
 
 ---
