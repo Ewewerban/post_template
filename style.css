@@ -63,6 +63,17 @@ a:hover {
     height: 100vh;
 }
 
+/* Image-based avatar support */
+.avatar-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 2px solid var(--border-color);
+}
+
+/* Text fallback avatar */
 .avatar {
     width: 80px;
     height: 80px;
@@ -131,11 +142,23 @@ a:hover {
     font-size: 1.75rem;
 }
 
-/* --- POST LIST (INDEX) --- */
-.post-list {
+/* --- POST LIST (INDEX) & ARCHIVES --- */
+.post-list, .archive-list {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+}
+
+.archive-section {
+    margin-bottom: 3rem;
+}
+
+.archive-section h3 {
+    color: var(--accent);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.2rem;
 }
 
 .post-preview .post-title a {
@@ -257,6 +280,6 @@ pre code {
 @media (max-width: 768px) {
     .container { flex-direction: column; }
     .sidebar { width: 100%; height: auto; position: relative; padding: 1.5rem; }
-    .nav-menu { display: none; } /* Kept simple for minimalist setup */
+    .nav-menu { flex-direction: row; margin-top: 1rem; justify-content: start; gap: 1.5rem; }
     .main-content { margin-left: 0; padding: 2rem 1.5rem; }
 }
