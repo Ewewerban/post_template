@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding CSS Flexbox - Your Blog</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-wrapper">
+                <div class="profile-container">
+                    <div class="avatar">B</div>
+                    <h1 class="site-title"><a href="../../">Chirpy Lite</a></h1>
+                    <p class="site-subtitle">A minimalist tech blog template</p>
+                </div>
+                <nav class="nav-menu">
+                    <a href="../../" class="nav-item">Home</a>
+                    <a href="#" class="nav-item">Categories</a>
+                    <a href="#" class="nav-item">Tags</a>
+                    <a href="#" class="nav-item">About</a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <article class="post-single">
+                <header class="post-header">
+                    <h1>Understanding CSS Flexbox Layout Efficiently</h1>
+                    <div class="post-meta">
+                        <span>May 28, 2026</span>
+                        <span class="post-tag">CSS</span>
+                        <span class="post-tag">Web Design</span>
+                    </div>
+                </header>
+
+                <div class="post-body">
+                    <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns. Items flex to fill additional space or shrink to fit into smaller spaces.</p>
+                    
+                    <h2>The Parent Container Properties</h2>
+                    <p>To make an element a flex container, set its display property to flex:</p>
+                    <pre><code>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}</code></pre>
+
+                    <div class="callout info">
+                        <div class="callout-title">ℹ️ Note</div>
+                        <p>Flexbox aligns items relative to its main-axis and cross-axis. Changing <code>flex-direction</code> flips these axes completely.</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
