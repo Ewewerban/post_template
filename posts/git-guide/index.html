@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Git - Your blog</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-wrapper">
+                <div class="profile-container">
+                    <div class="avatar">B</div>
+                    <h1 class="site-title"><a href="../../">Chirpy Lite</a></h1>
+                    <p class="site-subtitle">A minimalist tech blog template</p>
+                </div>
+                <nav class="nav-menu">
+                    <a href="../../" class="nav-item">Home</a>
+                    <a href="#" class="nav-item">Categories</a>
+                    <a href="#" class="nav-item">Tags</a>
+                    <a href="#" class="nav-item">About</a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <article class="post-single">
+                <header class="post-header">
+                    <h1>Mastering Git: A Beginner's Practical Guide</h1>
+                    <div class="post-meta">
+                        <span>June 12, 2026</span>
+                        <span class="post-tag">Git</span>
+                        <span class="post-tag">Tutorial</span>
+                    </div>
+                </header>
+
+                <div class="post-body">
+                    <p>Git is an essential tool for modern software development. It allows you to track changes, revert to previous stages, and collaborate seamlessly with other developers.</p>
+                    
+                    <h2>Essential Commands</h2>
+                    <p>To start tracking a new project, navigate to your directory and initialize git:</p>
+                    <pre><code>git init
+git add .
+git commit -m "Initial commit"</code></pre>
+
+                    <div class="callout tip">
+                        <div class="callout-title">💡 Pro Tip</div>
+                        <p>Always write descriptive commit messages. It saves a lot of time for you and your teammates when debuging the history later.</p>
+                    </div>
+
+                    <p>When working with remote repositories like GitHub, you will use <code>git push</code> to upload your changes.</p>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
