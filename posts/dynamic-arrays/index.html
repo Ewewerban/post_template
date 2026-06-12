@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Arrays - Your Blog</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-wrapper">
+                <div class="profile-container">
+                    <div class="avatar">B</div>
+                    <h1 class="site-title"><a href="../../">Chirpy Lite</a></h1>
+                    <p class="site-subtitle">A minimalist tech blog template</p>
+                </div>
+                <nav class="nav-menu">
+                    <a href="../../" class="nav-item">Home</a>
+                    <a href="#" class="nav-item">Categories</a>
+                    <a href="#" class="nav-item">Tags</a>
+                    <a href="#" class="nav-item">About</a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <article class="post-single">
+                <header class="post-header">
+                    <h1>Deep Dive into Dynamic Arrays and Memory Allocation</h1>
+                    <div class="post-meta">
+                        <span>April 15, 2026</span>
+                        <span class="post-tag">CS Theory</span>
+                        <span class="post-tag">Data Structures</span>
+                    </div>
+                </header>
+
+                <div class="post-body">
+                    <p>Static arrays have fixed sizes determined at compile time. Dynamic arrays, however, can grow dynamically as elements are added.</p>
+                    
+                    <div class="callout warning">
+                        <div class="callout-title">⚠️ Warning</div>
+                        <p>Resizing an array requires allocating a new block of memory and copying all elements. This operation takes O(n) time, though amortized insertion remains O(1).</p>
+                    </div>
+
+                    <div class="callout danger">
+                        <div class="callout-title">🚨 Critical Error Context</div>
+                        <p>In languages like C, forgetting to free dynamically allocated memory blocks results in severe memory leaks.</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
